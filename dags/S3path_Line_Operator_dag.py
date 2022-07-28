@@ -24,7 +24,7 @@ default_args = {
 }
 
 dag = DAG(
-    "Line_operator_dag_s3path",
+    "S3Path_Line_operator_dag",
     default_args=default_args,
     schedule_interval=None,
     start_date=datetime.now() - timedelta(minutes=1),
