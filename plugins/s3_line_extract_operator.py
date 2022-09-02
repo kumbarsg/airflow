@@ -31,7 +31,11 @@ class S3LineExtractOperator(BaseOperator):
                 # aws_access_key_id= ACCESS_ID ,
                 # aws_secret_access_key= ACCESS_KEY
             )
+<<<<<<< HEAD
             obj = s3.Object(self.target_bucket, self.target_key)
+=======
+            obj = s3.Object(self.target_bucket, key)
+>>>>>>> 75bac1bd135e5b7d05d71cfe142d34aeb3ebf99e
             body = obj.get()["Body"].read().decode("utf-8")
             body_list = body.splitlines()
 

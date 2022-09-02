@@ -9,7 +9,11 @@ from plugins.s3_line_extract_operator import S3LineExtractOperator
 import logging
 
 TARGET_BUCKET = "airflow-sgk-demo"
+<<<<<<< HEAD
 TARGET_KEY = "subfolder1/test1.txt"
+=======
+TARGET_KEY = "subfolder/test1.txt"
+>>>>>>> 75bac1bd135e5b7d05d71cfe142d34aeb3ebf99e
 LINE_NO = 3
 USER_REGION = "us-east-1"
 
@@ -25,7 +29,11 @@ default_args = {
 }
 
 dag = DAG(
+<<<<<<< HEAD
     "S3_Line_operator_dag",
+=======
+    "Line_operator_dag",
+>>>>>>> 75bac1bd135e5b7d05d71cfe142d34aeb3ebf99e
     default_args=default_args,
     schedule_interval=None,
     start_date=datetime.now() - timedelta(minutes=1),
